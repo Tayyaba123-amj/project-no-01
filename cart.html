@@ -1,0 +1,54 @@
+<!-- =====================  cart.html  ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | Sweet Treats Bakery</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="container flex between center-v">
+    <a class="logo" href="index.html">Sweet Treats<span> Bakery</span></a>
+    <nav id="mainNav" class="flex gap-md">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="active btn-cart" href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+       
+    </nav>
+  </header>
+
+  <main class="container my-5" id="cartPage">
+    <h1 class="text-center mb-3">Your Order</h1>
+
+    <div id="cartTableWrapper"></div>
+
+    <form id="checkoutForm" class="checkout-form card p-4 mt-4 hidden">
+      <h2>Checkout Details</h2>
+      <label>
+        Name
+        <input type="text" id="custName" required />
+      </label>
+      <label>
+        Phone (+92‑)
+        <input type="tel" id="custPhone" pattern="[0-9]{10,12}" required />
+      </label>
+      <label>
+        Delivery Address
+        <textarea id="custAddress" rows="3" required></textarea>
+      </label>
+      <button type="submit" class="btn-primary w-100 mt-3">Place Order</button>
+    </form>
+
+    <p id="emptyMsg" class="text-center">Your cart is empty – have a look at <a href="menu.html">our menu</a>! 🍪</p>
+  </main>
+
+  <footer class="footer container flex between center-v py-4">
+    <p>© 2025 Sweet Treats Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

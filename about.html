@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Sweet Treats Bakery</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Re‑use the same header by copying from index.html or turning into includes if you switch to a templating engine -->
+  <header class="container flex between center-v">
+    <a class="logo" href="index.html">Sweet Treats<span> Bakery</span></a>
+    <nav id="mainNav" class="flex gap-md">
+      <a href="index.html">Home</a>
+      <a class="active" href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn-cart" href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+       <img src="logo.jpg" alt="Bakery Logo" class="logo" style="height:160px;">
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-3">Our Menu</h1>
+    <div class="grid-3 gap-lg" id="productGrid">
+      <!-- Product cards are injected by script.js so you only edit data once -->
+    </div>
+  </main>
+
+  <footer class="footer container flex between center-v py-4">
+    <p>© 2025 Sweet Treats Bakery. All rights reserved.</p>
+    <a href="cart.html" class="btn-primary">View Cart →</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
